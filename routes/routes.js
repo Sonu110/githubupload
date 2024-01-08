@@ -8,6 +8,9 @@ router.route('/').get((req,res)=>{
 
 }).post(main);
 
+route.get('/about',(res,res)=>{
+    res.send("hyty")
+})
 
 router.get('/dataall',Alldata)
 
