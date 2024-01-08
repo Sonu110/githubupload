@@ -28,11 +28,11 @@ const logindatas = require('../models/logindata')
   async function Alldata(req,res) {
     try
     {
-        const data = await logindatas.find()
+        const data = await logindatas.find() 
         res.json(data)
     }
     catch(e)
-    {
+    { 
       res.status(400).json(e)
     }
     
