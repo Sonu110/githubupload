@@ -8,7 +8,7 @@ router.route('/').get((req,res)=>{
 
 }).post(main);
 
-route.get('/about',(req,res)=>{
+router.get('/about',(req,res)=>{
     res.send("hyty")
 })
 

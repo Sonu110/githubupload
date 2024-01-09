@@ -8,6 +8,11 @@ const Routes = require('./routes/routes')
 app.use(cors())
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
+
+
+
+
+
 Mongoose.connect(process.env.MongodbUrl).then(()=>{
     console.log("the mogodb sucees ");
 }).catch((e)=>{
